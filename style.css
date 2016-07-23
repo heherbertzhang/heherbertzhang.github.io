@@ -1,0 +1,67 @@
+#navigation, #side, #bodyid, #footer{
+	border: 2px solid orange;
+	margin: 5px;
+	padding: 10px;
+}
+
+#navigation, #side, #bodyid{
+	text-align: center;
+}
+
+#navigation{
+	float: left;
+	width: 18%;
+}
+
+#navigation ul{
+	list-style-type: none;
+	margin: 0;
+  padding: 0;
+}
+
+#navigation a{
+	display: block;
+}
+
+#bodyid{
+	clear: none;
+	float: left;
+	width: 50%;
+}
+
+#side{
+	float: left;
+	width: 18%;
+	overflow: auto;
+}
+
+
+header{
+	text-align: center;
+	color: cyan;
+	border: 2px solid orange;
+	border-radius: 25px;
+	width: 95%;
+}
+
+body h2 {
+	text-align: center;
+}
+
+.content {
+	text-align: left;
+}
+
+a.visited {
+	color: cyan;
+}
+
+footer {
+	padding: 10px;
+	border: 2px solid orange;
+	clear: both;
+	float: left;
+	width: 95%;
+	border-radius: 25px;
+	color: blue;
+}
