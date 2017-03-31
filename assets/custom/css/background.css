@@ -1,0 +1,23 @@
+.bg-skills
+{
+    background: url("../images/backgrounds/00.jpg");
+}
+
+.bg-dark-layer
+{
+    background-color: rgba(29, 20, 20, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-timeline
+{
+    background: url("../images/backgrounds/05.jpg");
+}
+
+.bg-feedback
+{
+    background: url("../images/backgrounds/06.jpg");
+}

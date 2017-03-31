@@ -13,170 +13,9 @@
    <meta name="description" content="Herbert Zhang's portfolio resume.">
    <meta name="keywords" content="herbert, herbert zhang, he zhang, resume, portfolio">
    <link rel=icon href=favicon.ico sizes="16x16" type="image/png">
-   <style>
-      #preloader {
-         position: fixed;
-         /*position: absolute;*/
-         left: 0;
-         top: 0;
-         z-index: 99999;
-         width: 100%;
-         height: 100%;
-         overflow: visible;
-         background-color: #252b33;
-         /*background: #202020 url("../images/preloader.gif") no-repeat center center;*/
-      }
-      .sk-folding-cube {
-         width: 40px;
-         height: 40px;
-         position: absolute;
-         top: 0;
-         left: 0;
-         bottom: 60px;
-         right: 0;
-         margin: auto;
-         -webkit-transform: rotateZ(45deg);
-         transform: rotateZ(45deg);
-      }
-      .sk-folding-cube .sk-cube {
-         float: left;
-         width: 50%;
-         height: 50%;
-         position: relative;
-         -webkit-transform: scale(1.1);
-         -ms-transform: scale(1.1);
-         transform: scale(1.1);
-      }
-      .sk-folding-cube .sk-cube:before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background-color: #fff;
-         -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
-         animation: sk-foldCubeAngle 2.4s infinite linear both;
-         -webkit-transform-origin: 100% 100%;
-         -ms-transform-origin: 100% 100%;
-         transform-origin: 100% 100%;
-      }
-      .sk-folding-cube .sk-cube2 {
-         -webkit-transform: scale(1.1) rotateZ(90deg);
-         transform: scale(1.1) rotateZ(90deg);
-      }
-      .sk-folding-cube .sk-cube3 {
-         -webkit-transform: scale(1.1) rotateZ(180deg);
-         transform: scale(1.1) rotateZ(180deg);
-      }
-      .sk-folding-cube .sk-cube4 {
-         -webkit-transform: scale(1.1) rotateZ(270deg);
-         transform: scale(1.1) rotateZ(270deg);
-      }
-      .sk-folding-cube .sk-cube2:before {
-         -webkit-animation-delay: 0.3s;
-         animation-delay: 0.3s;
-      }
-      .sk-folding-cube .sk-cube3:before {
-         -webkit-animation-delay: 0.6s;
-         animation-delay: 0.6s;
-      }
-      .sk-folding-cube .sk-cube4:before {
-         -webkit-animation-delay: 0.9s;
-         animation-delay: 0.9s;
-      }
-      @-webkit-keyframes sk-foldCubeAngle {
-         0%, 10% {
-            -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
-            opacity: 0;
-         } 25%, 75% {
-              -webkit-transform: perspective(140px) rotateX(0deg);
-              transform: perspective(140px) rotateX(0deg);
-              opacity: 1;
-           } 90%, 100% {
-                -webkit-transform: perspective(140px) rotateY(180deg);
-                transform: perspective(140px) rotateY(180deg);
-                opacity: 0;
-             }
-      }
-      @keyframes sk-foldCubeAngle {
-         0%, 10% {
-            -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
-            opacity: 0;
-         } 25%, 75% {
-              -webkit-transform: perspective(140px) rotateX(0deg);
-              transform: perspective(140px) rotateX(0deg);
-              opacity: 1;
-           } 90%, 100% {
-                -webkit-transform: perspective(140px) rotateY(180deg);
-                transform: perspective(140px) rotateY(180deg);
-                opacity: 0;
-             }
-      }
-   </style>
 
 </head>
 <body class="">
-
-<!--Pre-Loader-->
-<div id="preloader">
-   <div class="sk-folding-cube">
-      <div class="sk-cube1 sk-cube"></div>
-      <div class="sk-cube2 sk-cube"></div>
-      <div class="sk-cube4 sk-cube"></div>
-      <div class="sk-cube3 sk-cube"></div>
-   </div>
-</div>
-
-<!-- Off-canvas menu -->
-<div class="menu-wrap mobmenu-john">
-   <div class="dividewhite4"></div>
-   <nav class="menu">
-      <ul class="icon-list">
-         <li>
-            <div class="m-usermenu">
-               <div>
-                  <div class="article-author-name">
-                     <h4 class="font-accident-one-bold"><a href="#!">John A. Fletcher</a></h4>
-                     <p class="nopadding">
-                        <span class="extrasmall fontcolor-invert">Lecturer</span>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="dividewhite2"></div>
-         </li>
-         <li class="menu-item"><a href="#header-wrapper-mp"><i class="fa fa-fw fa-star-o"></i><span>Home</span></a></li>
-         <li class="menu-item"><a href="#details"><i class="fa fa-fw fa-bell-o"></i><span>Details</span></a></li>
-         <li class="menu-item"><a href="#counts"><i class="fa fa-fw fa-bell-o"></i><span>Counts</span></a></li>
-         <li class="menu-item"><a href="#portfolio"><i class="fa fa-fw fa-comment-o"></i><span>Portfolio</span></a></li>
-         <li class="menu-item"><a href="#progress"><i class="fa fa-fw fa-bar-chart-o"></i><span>Skills</span></a></li>
-         <li class="menu-item"><a href="#timeline-vertical"><i class="fa fa-fw fa-shopping-cart"></i><span>Timeline</span></a></li>
-         <li class="menu-item"><a href="#photocard"><i class="fa fa-fw fa-recycle"></i><span>Featured</span></a></li>
-         <li class="menu-item"><a href="#testmonials"><i class="fa fa-fw fa-bell-o"></i><span>Testmonials</span></a></li>
-         <li class="menu-item"><a href="#feedback"><i class="fa fa-fw fa-bell-o"></i><span>Feedback</span></a></li>
-         <li class="menu-item"><a href="https://wrapbootstrap.com/theme/fletcher-personal-landing-page-html-WB029022K?ref=neuethemes" target="_blank"><i class="fa fa-fw fa-bell-o"></i><span>Buy the Template</span></a></li>
-         <li class="socials">
-            <ul>
-               <li><a href="#!"><i class="flaticon-facebook44"></i></a></li>
-               <li><a href="#!"><i class="flaticon-google110"></i></a></li>
-               <li><a href="#!"><i class="flaticon-pinterest27"></i></a></li>
-               <li><a href="#!"><i class="flaticon-instagram13"></i></a></li>
-               <li><a href="#!"><i class="flaticon-linkedin21"></i></a></li>
-               <li><a href="#!"><i class="flaticon-twitter37"></i></a></li>
-            </ul>
-         </li>
-      </ul>
-
-
-   </nav>
-   <div class="close-button nav-icon2" id="close-button">
-      <div></div>
-   </div>
-</div>
-<!-- / Off-canvas menu -->
 
 <div class="content-wrap">
 
@@ -195,14 +34,7 @@
                <ul class="sf-menu clearfix" id="example">
                   <li class="m-desktop menu-item active"><a href="#header-wrapper-mp">Home</a></li>
                   <li class="m-desktop menu-item"><a href="#details">Details</a></li>
-                  <li class="m-desktop menu-item"><a href="#portfolio">Portfolio</a></li>
                   <li class="m-desktop menu-item"><a href="#timeline-vertical">Timeline</a></li>
-                  <li class="m-desktop menu-item"><a href="https://wrapbootstrap.com/theme/fletcher-personal-landing-page-html-WB029022K?ref=neuethemes" target="_blank">Buy</a></li>
-                  <li class="mob-button">
-                     <div class="menu-button nav-icon" id="open-button">
-                        <div></div>
-                     </div>
-                  </li>
                </ul>
             </nav>
 
@@ -311,71 +143,77 @@
       <!-- /Revolution Slider -->
 
       <!-- Circle Progress Block -->
-      <section id="progress" class="e-block-ins dark pt-section bg-john-00 jarallax" data-name="Success">
+      <div id="open-button">
+      </div>
+      <section id="progress" class="e-block-null dark pt-section bg-skills bg-dark-layer jarallax" data-name="Success">
          <div class="container">
             <div class="row">
+
                <div class="progressblock">
 
+                  <!--C++-->
                   <div class="col-md-3 text-center">
                      <div class="progressbar" data-animate="false">
-                        <div class="circle" data-percent="12.5"><div></div></div>
+                        <div class="circle" data-percent="87"><div></div>
+                        </div>
                      </div>
-                     <h4 class="font-accident-one-normal">Prototyping</h4>
+                     <h4 class="font-accident-one-normal">C++</h4>
                      <p class="">
-                        Perfect as corporate, product and app landing page, personal Curriculum Vitae
+                     Good as it is. 
                      </p>
                      <div class="divider-dynamic"></div>
                   </div>
-                  <div class="col-md-3 text-center">
-                     <div class="progressbar" data-animate="false">
-                        <div class="circle" data-percent="24.5"><div></div></div>
-                     </div>
-                     <h4 class="font-accident-one-normal">Design</h4>
-                     <p class="">
-                        Fletcher Template is suitable for photographers, designers, artist and painters
-                     </p>
-                     <div class="divider-dynamic"></div>
-                  </div>
-                  <div class="col-md-3 text-center">
-                     <div class="progressbar" data-animate="false">
-                        <div class="circle" data-percent="39.5"><div></div></div>
-                     </div>
-                     <h4 class="font-accident-one-normal">Developing</h4>
-                     <p class=" ">
-                        Perfect as corporate, product and app landing page, personal Curriculum Vitae
-                     </p>
-                     <div class="divider-dynamic"></div>
-                  </div>
-                  <div class="col-md-3 text-center">
-                     <div class="progressbar" data-animate="false">
-                        <div class="circle" data-percent="72.5"><div></div></div>
-                     </div>
-                     <h4 class="font-accident-one-normal ">Testing</h4>
-                     <p class="">
-                        Fletcher Template is suitable for photographers, designers, artist and painters
-                     </p>
-                     <div class="divider-dynamic"></div>
-                  </div>
-               </div>
 
+                  <div class="col-md-3 text-center">
+                     <div class="progressbar" data-animate="false">
+                        <div class="circle" data-percent="76"><div></div></div>
+                     </div>
+                     <h4 class="font-accident-one-normal">Python</h4>
+                     <p class="">
+                     Used in data science. 
+                     </p>
+                     <div class="divider-dynamic"></div>
+                  </div>
+
+                  <div class="col-md-3 text-center">
+                     <div class="progressbar" data-animate="false">
+                        <div class="circle" data-percent="75"><div></div></div>
+                     </div>
+                     <h4 class="font-accident-one-normal">Java</h4>
+                     <p class=" ">
+                     Objected-oriented programming.
+                     </p>
+                     <div class="divider-dynamic"></div>
+                  </div>
+
+                  <div class="col-md-3 text-center">
+                     <div class="progressbar" data-animate="false">
+                        <div class="circle" data-percent="62"><div></div></div>
+                     </div>
+                     <h4 class="font-accident-one-normal ">Others</h4>
+                     <p class="">
+                     Javascript, Perl, Tcl, C, Assembly
+                     </p>
+                     <div class="divider-dynamic"></div>
+                  </div>
+
+               </div> <!--progress block-->
             </div>
          </div>
       </section>
       <!-- /Circle Progress Block -->
 
       <!-- Timeline Block -->
-      <section id="timeline-vertical" class="e-block dark bg-darkblue pt-section" data-name="Timeline">
+      <section id="timeline-vertical" class="e-block dark bg-darkblue bg-timeline pt-section" data-name="Timeline">
          <div class="container">
 
             <div class="text-center">
                <h2 class="font-accident-one-bold">My Professional Timeline</h2>
                <div class="dividewhite1"></div>
-               <h5 class="font-accident-one-bold uppercase hovercolor">Working hard and making the success</h5>
+               <h5 class="font-accident-one-bold uppercase hovercolor">Working hard and success</h5>
                <div class="dividewhite2"></div>
                <p class="fontcolor-medium-light">
-               Customize your website as you want using different colors and 100% free fonts. Build it from pieces and
-               blocks as simple as Lego. <br>
-               Electronic Website Template is fully responsive, looks and works perfect on any device.
+               Looks and works perfect.
                </p>
             </div>
 
@@ -385,56 +223,64 @@
                <li>
                   <div class="timeline-badge primary"><i class="flaticon-star"></i></div>
                   <div class="timeline-panel">
-                     <p class="timeline-time">Aug 2010 - Nov 2012</p>
-                     <div class="timeline-photo john-timeline-01"></div>
-                     <div class="timeline-heading">
-                        <h4 class="font-accident-one-bold">Mobile App Creation</h4>
-                        <h6>UI/UX Department</h6>
-                     </div>
-                     <div class="timeline-body">
-                        <p class="small color02">Fletcher Template is suitable for photographers, designers, artist, painters, illustrators and other creative persons for showing their skills, works, experience and services.</p>
+                     <p class="timeline-time">2016</p>
+                     <div class="timeline-photo john-timeline-02"></div>
+                     <div class="container bg-dark-layer">
+                        <div class="timeline-heading">
+                           <h4 class="font-accident-one-bold">Compiler Research Assistant</h4>
+                           <h6>University of Toronto, Professor Tarek Abdelrahman</h6>
+                        </div>
+                        <div class="timeline-body">
+                           <p class="small color02">Optimizing for-loop unrolling</p>
+                        </div>
                      </div>
                   </div>
                </li>
                <li class="timeline-inverted">
                   <div class="timeline-badge success"><i class="flaticon-star"></i></div>
                   <div class="timeline-panel">
-                     <p class="timeline-time">March 2013 - Jan 2014</p>
-                     <div class="timeline-photo john-timeline-02"></div>
-                     <div class="timeline-heading">
-                        <h4 class="font-accident-one-bold">New Website version launched</h4>
-                        <h6>Design Department</h6>
-                     </div>
-                     <div class="timeline-body">
-                        <p class="small color02">Fletcher is fully Responsive, mobile-friendly and Retina-ready. It’s design & premium graphics look awesome on any device your employer/client uses</p>
+                     <p class="timeline-time">2016</p>
+                     <div class="timeline-photo john-timeline-01"></div>
+                     <div class="container bg-dark-layer">
+                        <div class="timeline-heading">
+                           <h4 class="font-accident-one-bold">Android App Developer</h4>
+                           <h6>Freelance/@Startup</h6>
+                        </div>
+                        <div class="timeline-body">
+                           <p class="small color02">Grocery Shopping App</p>
+                        </div>
                      </div>
                   </div>
                </li>
                <li>
                   <div class="timeline-badge danger"><i class="flaticon-star"></i></div>
                   <div class="timeline-panel">
-                     <p class="timeline-time">Jul 2014 - Sep 2015</p>
+                     <p class="timeline-time">May 2016 - April 2017</p>
                      <div class="timeline-photo john-timeline-03"></div>
-                     <div class="timeline-heading">
-                        <h4 class="font-accident-one-bold">Moved to the new Office</h4>
-                        <h6>All Departments</h6>
-                     </div>
-                     <div class="timeline-body">
-                        <p class="small color02">Fletcher Creative One page WordPress theme is ideal for creative studios, agencies and creative teams as the product / service / app landing promo page.</p>
+                     <div class="container bg-dark-layer">
+                        <div class="timeline-heading">
+                           <h4 class="font-accident-one-bold">Intel Software Engineer Intern</h4>
+                           <h6>TimeQuest team</h6>
+                        </div>
+                        <div class="timeline-body">
+                           <p class="small color02">Working in the timing analyzing tool "TimeQuest" of Quartus FPGA developing software.</p>
+                        </div>
                      </div>
                   </div>
                </li>
                <li class="timeline-inverted info">
                   <div class="timeline-badge warning"><i class="flaticon-star"></i></div>
                   <div class="timeline-panel">
-                     <p class="timeline-time">Sep 2015 - ...</p>
+                     <p class="timeline-time">May 2017 - August 2017</p>
                      <div class="timeline-photo john-timeline-04"></div>
-                     <div class="timeline-heading">
-                        <h4 class="font-accident-one-bold">Startup Launched</h4>
-                        <h6>All Departments</h6>
-                     </div>
-                     <div class="timeline-body">
-                        <p class="small color02">Fletcher WP Theme comes with pre-defined demo-content and allows to make a wide range customization via standard WordPress Customizer feature.</p>
+                     <div class="container bg-dark-layer">
+                        <div class="timeline-heading">
+                           <h4 class="font-accident-one-bold">Microsoft Software Engineer Intern</h4>
+                           <h6>Microsoft Studio</h6>
+                        </div>
+                        <div class="timeline-body">
+                           <p class="small color02"></p>
+                        </div>
                      </div>
                   </div>
                </li>
@@ -449,90 +295,13 @@
       </section>
       <!-- /Timeline Block -->
 
-      <!-- Blog -->
-      <section id="blog" class="e-block dark bg-darkblue2 pt-section" data-name="Blog">
-         <div class="container">
-
-            <div class="text-center">
-               <h2 class="font-accident-one-bold">Resent Articles</h2>
-               <div class="dividewhite1"></div>
-               <h5 class="font-accident-one-bold uppercase hovercolor">Working hard and making the success</h5>
-               <div class="dividewhite2"></div>
-               <p class="">
-                  Customize your website as you want using different colors and 100% free fonts. Build it from pieces and
-                  blocks as simple as Lego. <br>
-                  Electronic Website Template is fully responsive, looks and works perfect on any device.
-               </p>
-            </div>
-
-            <div class="dividewhite8"></div>
-            <div class="row">
-               <div class="col-md-3 infoblock">
-                  <h4 class="font-accident-one-bold uppercase"><a href="#!">Landing page</a></h4>
-                  <div class="post-attrib">
-                     <div class="comment-baloon font-accident-one-bold">15</div>
-                     <div class="post-data">
-                        <div class="post-date hovercolor">2014 Jun, 14</div>
-                        <div class="post-author">by John Fletcher</div>
-                     </div>
-                  </div>
-                  <p class="small fontcolor-medium-light">
-                     Fletcher is fully Responsive, mobile-friendly and Retina-ready. It’s design & premium graphics look awesome on any device your client uses.
-                  </p>
-               </div>
-               <div class="col-md-3 infoblock">
-                  <h4 class="font-accident-one-bold uppercase"><a href="#!">Fully Responsive</a></h4>
-                  <div class="post-attrib">
-                     <div class="comment-baloon font-accident-one-bold">23</div>
-                     <div class="post-data">
-                        <div class="post-date hovercolor">2014 Jun, 14</div>
-                        <div class="post-author">by John Fletcher</div>
-                     </div>
-                  </div>
-                  <p class="small fontcolor-medium-light">
-                     Fletcher Theme is suitable for photographers, designers, artist, painters, illustrators and other creative persons for showing their skills
-                  </p>
-               </div>
-               <div class="col-md-3 infoblock">
-                  <h4 class="font-accident-one-bold uppercase"><a href="#!">Creative template</a></h4>
-                  <div class="post-attrib">
-                     <div class="comment-baloon font-accident-one-bold">15</div>
-                     <div class="post-data">
-                        <div class="post-date hovercolor">2014 Jun, 14</div>
-                        <div class="post-author">by John Fletcher</div>
-                     </div>
-                  </div>
-                  <p class="small fontcolor-medium-light">
-                     Design & premium graphics look awesome on any device your employer/client uses: iPhone, iPad, Android, Mac, BlackBerry, Windows & Linux.
-                  </p>
-               </div>
-               <div class="col-md-3 infoblock">
-                  <h4 class="font-accident-one-bold uppercase"><a href="#!">SEO Friendly</a></h4>
-                  <div class="post-attrib">
-                     <div class="comment-baloon font-accident-one-bold">23</div>
-                     <div class="post-data">
-                        <div class="post-date hovercolor">2014 Jun, 14</div>
-                        <div class="post-author">by John Fletcher</div>
-                     </div>
-                  </div>
-                  <p class="small fontcolor-medium-light">
-                     Fletcher is fully Responsive, mobile-friendly and Retina-ready. It’s design & premium graphics look awesome on any device your client uses.
-                  </p>
-               </div>
-            </div>
-
-
-         </div>
-      </section>
-      <!-- /Blog -->
-
       <!-- Quote -->
-      <section id="quote" class="e-block-ins light jarallax bg-john-04">
+      <section id="quote" class="e-block-ins light jarallax bg-light">
          <div class="container">
             <div class="row">
                <div class="col-md-2"></div>
                <div class="col-md-8">
-                  <blockquote><p>It´s a very beautiful and useful template for many differnt purpose. I would highly recommend it, as it is flexible, clear and mobile optimized. If you ever have a problem there is a fantastic support, which helps you immidiatly. Thank you.<cite>Your Happy Customer</cite></p></blockquote>
+                  <blockquote><p>I like simple and working solution.<cite>Herbert</cite></p></blockquote>
                </div>
                <div class="col-md-2"></div>
             </div>
@@ -541,14 +310,14 @@
       <!-- /Quote -->
 
       <!-- Promo -->
-      <section id="promo" class="e-block e-block-ins bg-color01">
+      <section id="" class="e-block e-block-ins bg-light">
          <div class="container">
             <div class="row">
                <div class="col-md-6"></div>
                <div class="col-md-6">
                   <div class="dividewhite8"></div>
-                  <h3 class="font-accident-one-bold">"Some people say i am a new romantic, but i am just Electronic..."</h3>
-                  <cite class="">John B</cite>
+                  <h3 class="font-accident-one-bold">"..., but i am just awesome..."</h3>
+                  <cite class="">Herbert</cite>
                   <div class="dividewhite8"></div>
                </div>
             </div>
@@ -556,37 +325,14 @@
       </section>
       <!-- /Promo -->
 
-      <!-- Join -->
-      <section id="join" class="e-block-ins dark jarallax bg-john-02">
-         <div class="container join">
-            <div class="row">
-               <div class="col-md-4">
-                  <h3 class="font-accident-one-normal">Join my Newsletter</h3>
-               </div>
-               <div class="col-md-7">
-                  <div class="field">
-                     <!--<label for="email">Email:</label>-->
-                     <input type="email" id="email" name="email" placeholder="Your Email" required>
-                  </div>
-               </div>
-               <div class="col-md-1">
-                  <div class="dividewhite1"></div>
-                  <a href="#!" class="btn btn-lgr-str" style="margin-top: 13px;">Go</a>
-               </div>
-            </div>
-            <div class="dividewhite1"></div>
-         </div>
-      </section>
-      <!-- /Join -->
-
       <!-- Feedback Block -->
-      <section id="feedback" class="e-block-ins dark jarallax bg-john-02 pt-section" data-name="Feedback">
+      <section id="feedback" class="e-block-ins dark jarallax bg-feedback pt-section" data-name="Feedback">
          <div class="container text-center dark">
             <div class="row feedback">
                <div class="col-md-12">
-                  <h2 class="font-accident-one-bold">Drop Us a Line</h2>
+                  <h2 class="font-accident-one-bold">Drop Me a Line</h2>
                   <div class="dividewhite1"></div>
-                  <h5 class="font-accident-one-bold uppercase hovercolor">What do you think about our Services</h5>
+                  <h5 class="font-accident-one-bold uppercase hovercolor">What do you think about me</h5>
                   <div class="dividewhite8"></div>
                </div>
                <div class="col-md-12"></div>
@@ -626,7 +372,7 @@
    </div>
 
    <!-- Google Map -->
-   <div class="bg-darkblue">
+   <!--div class="bg-darkblue">
       <a class="gm-toggle-link">
          <div class="gm-toggle">
             <i class="flaticon-placeholder-1"></i>
@@ -635,7 +381,7 @@
       <div id="gm-panel">
          <div id="google-map" class="bigmap"></div>
       </div>
-   </div>
+   </div-->
    <!-- /Google Map -->
 
    <!-- footer -->
@@ -643,48 +389,24 @@
       <div id="footer-wrapper" class="bg-darkblue dark">
          <div class="container">
             <div class="row">
-               <div class="col-sm-3">
+               <div class="col-sm-4 text-center">
                   <!-- About Widget -->
-                  <h4>John Fletcher</h4>
+                  <h4>Herbert Zhang</h4>
                   <div class="dividewhite2"></div>
-                  <p>The Experienced UI/UX Specialist, Web-designer, Photographer, Model</p>
+                  <p>Software Engineer</p>
                   <!-- / About Widget -->
                   <div class="dividewhite4"></div>
                </div>
-               <div class="col-sm-3">
+               <div class="col-sm-4 text-center">
                   <!-- Contacts Widget -->
                   <h4>Contacts</h4>
                   <div class="dividewhite2"></div>
-                  <div class="contact">
-                     <div class="footer-addr">
-                        <div class="footer-icon"><i class="fa fa-home"></i></div>
-                        <div class="addr-text">12345, Direct Drive - 110, Daytona Beach, Florida, USA</div>
-                     </div>
-                     <div class="footer-addr">
-                        <div class="footer-icon"><i class="fa fa-phone"></i></div>
-                        <div class="addr-text">1 234 567 67 45</div>
-                     </div>
-                  </div>
+                  <div class="footer-icon"><i class="fa fa-phone"></i></div>
+                  <div class="">1 416 830 6736</div>
                   <!-- / Contacts Widget -->
                   <div class="dividewhite4"></div>
                </div>
-               <div class="col-sm-3">
-                  <!-- Flickr feed Widget -->
-                  <h4>Media</h4>
-                  <div class="dividewhite2"></div>
-                  <ul id="basicuse" class="thumbs">
-                     <!-- To make it working Flickr feed: uncomment the Flickr feed section
-                     in script.js, set up the Flickr ID and delete all the li's with content below -->
-                     <li><a href="http://www.flickr.com/photos/55166285@N00/1274107940/"="the sunken garden by perfectweb, on Flickr"><img src="https://c2.staticflickr.com/2/1245/1274107940_ede5aa897d_s.jpg" class="img-rounded" alt="the sunken garden"></a></li>
-                     <li><a href="http://www.flickr.com/photos/55166285@N00/1274119018/"="tree rings by perfectweb, on Flickr"><img src="https://c2.staticflickr.com/2/1015/1274119018_1422d64d17_t.jpg" class="img-rounded" alt="tree rings"></a></li>
-                     <li><a href="http://www.flickr.com/photos/55166285@N00/1274114292/"="study of flowers by perfectweb, on Flickr"><img src="https://c2.staticflickr.com/2/1012/1274114292_f847986865_t.jpg" class="img-rounded" alt="study of flowers"></a></li>
-                     <li><a href="http://www.flickr.com/photos/25251822@N07/23506251141/"="study of flowers by perfectweb, on Flickr"><img src="https://c1.staticflickr.com/1/731/23506251141_0c177771be_t.jpg" class="img-rounded" alt="study of flowers"></a></li>
-                     <li><a href="http://www.flickr.com/photos/55166285@N00/1274119018/"="tree rings by perfectweb, on Flickr"><img src="https://c2.staticflickr.com/2/1015/1274119018_1422d64d17_t.jpg" class="img-rounded" alt="tree rings"></a></li>
-                  </ul>
-                  <!-- / Flickr feed Widget -->
-                  <div class="dividewhite4"></div>
-               </div>
-               <div class="col-sm-3">
+               <div class="col-sm-4 text-center">
                   <!-- Follow us Widget -->
                   <h4>Follow me</h4>
                   <div class="dividewhite2"></div>
@@ -697,16 +419,6 @@
                      <div class="inline-block">
                         <a href="">
                            <i class="fa fa-google-plus" title="GooglePlus" aria-hidden="true"></i>
-                        </a>
-                     </div>
-                     <div class="inline-block">
-                        <a href="">
-                           <i class="fa fa-pinterest" title="Pinterest" aria-hidden="true"></i>
-                        </a>
-                     </div>
-                     <div class="inline-block">
-                        <a href="">
-                           <i class="fa fa-instagram" title="Instagram" aria-hidden="true"></i>
                         </a>
                      </div>
                      <div class="inline-block">
@@ -724,7 +436,7 @@
       <div id="copyrights-wrapper" class="e-block-dark dark" style="background-color:#252b33;">
          <div class="container text-center copy-container">
             <div class="copyright">
-               © 2016 <a href="/" target="_blank">John Fletcher</a>. All rights reserved &nbsp;&nbsp;&nbsp;<a href="/" target="_blank">Legal Notice</a>&nbsp;&nbsp;&nbsp;<a href="/" target="_blank">Terms &amp; Conditions</a><br>Template by <a href="http://neuethemes.net" target="_blank">Neuethemes</a>				</div>
+               © 2016 <a href="/" target="_blank">Herbert Zhang</a>. All rights reserved &nbsp;&nbsp;&nbsp;<a href="/" target="_blank">Legal Notice</a>&nbsp;&nbsp;&nbsp;<a href="/" target="_blank">Terms &amp; Conditions</a><br>	</div>
          </div>
       </div>
    </footer>
@@ -752,6 +464,7 @@
 
 <!-- Custom CSS -->
 <link href="assets/custom/css/style.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/custom/css/background.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
 
 
 
